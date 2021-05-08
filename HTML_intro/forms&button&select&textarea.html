@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Forms Demo</h1>
+
+    <!-- id and for should be having the same string -->
+    <!-- name is what you send to the server -->
+    <!-- http://127.0.0.1:5500/tacos?username=123 for instance here is username=-->
+    <form action="/tacos">
+        <p>
+            <label for="user name">Enter a user name</label>
+            <input id="user name" type="text" placeholder="User name" name="username">
+        </p>
+        <p>
+            <label for="password">Enter password</label>
+            <input id="password" type="password" placeholder="Password" name="password">
+        </p>
+        <p>
+            <label for="color">Pick a color</label>
+            <input id="color" type="color" name="color">
+        </p>
+        <p>
+            <label for="number">Choose a number</label>
+            <input id="number" type="number" placeholder="number" name="num" min="1" max="1000" step="2">
+        </p>
+
+        <!-- default button will make you submit a form -->
+        <button>Sumbit</button>
+        <!-- unless specify using types -->
+        <button type="button">Do nothing</button>
+        <input type="Submit">
+
+    </form>
+
+
+    <!-- !!! -->
+    <!-- id and for should be having the same string -->
+    <!-- name is what you send to the server -->
+    <hr>
+    <h3>This is reddit search</h3>
+    <form action="https://www.reddit.com/search">
+        <label for="reddit search">Search on reddit</label>
+        <input id="reddit search" type="text" name="q">
+        <button>Search</button>
+    </form>
+
+    <hr>
+    <h3>This is google Search</h3>
+
+    <form action="https://www.google.com/search">
+        <label for="google search">Search on Google</label>
+        <input id="google search" type="text" name="q">
+        <button>Search</button>
+    </form>
+    <hr>
+    <h3>This is youtube search</h3>
+    <form action="https://www.youtube.com/results">
+        <label for="youtube">Search on Youtube</label>
+        <input id="youtube" type="text" name="search_query">
+        <button>Search</button>
+    </form>
+
+    <hr>
+
+    <!-- checked is used to check the box when the page is loaded -->
+    <!-- checkboxes can choose multiple check boxes -->
+    <!-- radio can choose only one option -->
+    <!-- name for radio need to be exactly the same to 
+        ensure only one option will be choosed. -->
+    <h2>More inputs</h2>
+    <form action="/bids">
+        <input type="checkbox" name="agree_tos" id="checkbox" checked>
+        <label for="checkbox">I agree to everything</label>
+        <p>
+            <label for="xs">xs:</label>
+            <!-- value is what we will send to the server -->
+            <input type="radio" name="size" id="xs" value="xs">
+            <label for="m">m:</label>
+            <input type="radio" name="size" id="m" value="m">
+            <label for="l">l:</label>
+            <input type="radio" name="size" id="l" value="l">
+
+        </p>
+
+        <!-- select is pre-selected option -->
+
+        <p>
+            <label for="meal">Please select the meal you want</label>
+            <select name="meal" id="meal">
+                <option value="">Please select a meal</option>
+                <option value="fish" selected>Fish</option>
+                <option value="Steak">Steak</option>
+                <option value="beg">veg</option>
+            </select>
+
+        </p>
+        <!-- for range step is how far you can go with one step -->
+        <!-- value is what your initial value is  -->
+        <p>
+            <label for="cheese">Please choose the level for cheese</label>
+            <input type="range" name="cheese_level" id="cheese" step="10" min="1" max="10" value="7">
+        </p>
+        <p>
+            <label for="request">Leave any special requests</label>
+            <textarea name="r" id="request" cols="30" rows="10" placeholder="Type something here"></textarea>
+        </p>
+
+
+        <button>submit</button>
+
+        <h2>validation Demo</h2>
+        <form action="/dummy">
+            <label for="first">first</label>
+            <input type="text" name="first" id="first" required>
+            <label for="username">username</label>
+            <input type="text" name="username" id="username" minlength="5" maxlength="20" required>
+
+
+            <p>
+                <label for="email">Please enter your email</label>
+                <input type="email" required id="email" name="email">
+                <label for="url">Please enter your url</label>
+                <input id="url" type="url" required>
+            </p>
+            <button>Submit</button>
+        </form>
+    </form>
+
+
+</body>
+
+</html>

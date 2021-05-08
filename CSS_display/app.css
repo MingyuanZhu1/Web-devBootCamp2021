@@ -1,0 +1,30 @@
+/* Inline elements display: width and height are ignored. 
+margin and padding push elements away horizontally but not vertically. */
+
+span {
+    background-color: palegreen;
+    border: 1px solid red;
+    display: none;
+}
+
+/* Block element display: block elements break the flow of a dociment. 
+Width height margin and padding are respected */
+
+h1 {
+    background-color: royalblue;
+    border: 5px tan solid;
+    margin: 50px;
+    padding: 100px;
+    display: inline-block;
+}
+
+/* Inline block behaved like an inline element 
+except width height margin and padding are respected. */
+
+div {
+    background-color: royalblue;
+    border: 5px tan solid;
+    margin: 50px;
+    padding: 100px;
+    display: inline-block;
+}

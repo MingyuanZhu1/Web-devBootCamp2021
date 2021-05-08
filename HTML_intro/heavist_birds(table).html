@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heavist Birds Table</title>
+</head>
+
+
+<!-- td is table data meaning actual data in a cell -->
+<!-- tr is table role meaning a row inside your table aka tuple -->
+<!-- th is table header meaning the disctiption for the column -->
+<!-- thead is a markup for your headers -->
+<!-- tbody is a markup for your mainbody -->
+
+<body>
+    <h1>Heavist Bird Table</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Average Mass [KG]</th>
+                <th>Max mass [KG]</th>
+                <th>Flighted</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Ostruch</td>
+                <td>104</td>
+                <td>156</td>
+                <td>no</td>
+            </tr>
+            <tr>
+                <td>Somali Ostrich</td>
+                <td>90</td>
+                <td>130</td>
+                <td>no</td>
+            </tr>
+
+            <tr>
+                <td>Wild Tyrkey</td>
+                <td>13.5</td>
+                <td>39</td>
+                <td>Yes</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <h2>Version 2</h2>
+    <table>
+        <thead>
+            <!-- rowspan is where your table header take up more row 竖着的 -->
+            <!-- colspan is where your table header take up more column 横着的 -->
+            <tr>
+                <th rowspan="2">Name</th>
+                <th colspan="2">Average Mass [KG]</th>
+                <th rowspan="2">Flighted</th>
+            </tr>
+
+            <tr>
+                <th>KG</th>
+                <th>Pound</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Ostruch</td>
+                <td>104</td>
+                <td>230</td>
+                <td>no</td>
+            </tr>
+            <tr>
+                <td>Somali Ostrich</td>
+                <td>90</td>
+                <td>200</td>
+                <td>no</td>
+            </tr>
+
+            <tr>
+                <td>Wild Tyrkey</td>
+                <td>13.5</td>
+                <td>50</td>
+                <td>Yes</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+</body>
+
+</html>

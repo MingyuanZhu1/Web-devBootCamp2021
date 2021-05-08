@@ -1,0 +1,42 @@
+div {
+    width: 200px;
+    height: 200px;
+    font-size: small;
+}
+
+h1 {
+    background-color: pink;
+    width: 100px;
+    padding: 100px;
+    margin: 0px;
+}
+
+#one {
+    background-color: #e5989b;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    margin: 20px 10px;
+}
+
+#two {
+    background-color: #e5838b;
+    border-color: #ffe5d9;
+    border-width: 2px;
+    border-style: dashed;
+}
+
+#three {
+    background-color: #664243;
+    /* should be size color and style in that order*/
+    border: 2px black dotted;
+    border-radius: 20%;
+}
+
+button {
+    padding: 5px 10px 5px 10px;
+}
+
+body {
+    margin: 0px;
+}

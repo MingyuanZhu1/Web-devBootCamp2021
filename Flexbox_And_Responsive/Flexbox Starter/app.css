@@ -1,0 +1,58 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#container {
+    background-color: #003049;
+    width: 90%;
+    /* height: 500px; */
+    margin: 0 auto;
+    border: 5px solid #003049;
+    /* display: flex enables the flex function */
+    display: flex;
+    /* flex-direction determines the main axies. */
+    flex-direction: column;
+    /* justify on the main axies. */
+    justify-content: center;
+    /* flex-wrap allow you to wrap to the next line. */
+    flex-wrap: wrap;
+    /* align-items on the cross axies. */
+    /* align-items: center; */
+    /* align-content needs to turn on along flex-wrap */
+    /* align-content: space-between; */
+}
+
+div:nth-of-type(3) {
+    align-self: auto;
+}
+
+#container {
+    background-color: #003049;
+    width: 90%;
+    /* height: 500px; */
+    margin: 0 auto;
+    border: 5px solid #003049;
+    /* display: flex enables the flex function */
+    display: flex;
+    /* flex-direction determines the main axies. */
+    flex-direction: row;
+    /* justify on the main axies. */
+    justify-content: center;
+    /* flex-wrap allow you to wrap to the next line. */
+    flex-wrap: wrap;
+    /* align-items on the cross axies. */
+    /* align-items: center; */
+}
+
+#container div {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    flex-basis: 200px;
+}
+
+/* this is used to control one particular item  */

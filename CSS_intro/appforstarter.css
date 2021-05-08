@@ -1,0 +1,79 @@
+/* univeral selector */
+
+/* * {
+    color: pink;
+} */
+
+button {
+    font-size: 20px;
+}
+
+h1, h2 {
+    color: orange;
+}
+
+#signup {
+    color: #e76f51;
+}
+
+span {
+    color: #fec5bb;
+}
+
+.tag {
+    color: #e63946;
+}
+
+.post a {
+    color: papayawhip;
+}
+
+footer a {
+    color: #4cc9f0;
+}
+
+/* select button that come directly after h2 */
+
+h2+button {
+    font-size: medium;
+    background-color: papayawhip;
+}
+
+/* this is director decendent */
+
+footer>a {
+    color: rebeccapurple
+}
+
+/* Attribute selector */
+
+input[type="password"] {
+    color: green;
+}
+
+/* :hover */
+
+.post a:hover {
+    color: darkblue;
+}
+
+button:active {
+    color: aquamarine;
+}
+
+.post:nth-of-type(2n) {
+    background-color: black;
+}
+
+.post h2::first-letter {
+    font-size: large;
+}
+
+p::first-line {
+    font-size: 70px;
+    color: papayawhip;
+}
+
+::selection {
+    background-color: rebeccapurple;
+}
